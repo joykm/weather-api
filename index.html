@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get/Post</title>
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<h1>GET Query - Weather Information</h1>
+	<form class="getQuery" action="">
+		<label for="city">City: </label>
+		<input type="text" id="city" name="city" placeholder="city" required>
+
+		<label for="countryCity">Country Code: (<a href="https://www.nationsonline.org/oneworld/country_code_list.htm" target="_blank">ISO 3166 Country Codes</a>)</label>
+		<input type="text" id="countryCity" name="countryCity" placeholder="country code">
+
+		<button id="citySubmit" type="submit">Submit</button>
+
+		<br><br>
+
+		<label for="zip">Zip: </label>
+		<input type="number" id="zip" name="zip" placeholder="zip">
+
+		<label for="countryZip">Country Code: (<a href="https://www.nationsonline.org/oneworld/country_code_list.htm" target="_blank">ISO 3166 Country Codes</a>)</label>
+		<input type="text" id="countryZip" name="countryZip" placeholder="country code">
+
+		<button id="zipSubmit" type="submit">Submit</button>
+
+
+		<h3>Output:</h3>
+		<span id="weatherOutput"></span>     
+	</form>	
+
+	<form>
+		<h1>POST</h1>
+		<label for="postInput">String in JSON Format: </label>
+		<input type="text" id="postInput" name="postInput" placeholder="JSON String">
+		<button id="postSubmit" type="submit">Submit</button>
+
+		<h3>Output:</h3>
+		<span id="postOutput"></span>    
+	</form>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
