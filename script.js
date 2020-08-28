@@ -71,6 +71,3 @@ function bindButtons(){
         req.send(postInput.value);
     });
 }
-
-
-//http://httpbin.org/post
